@@ -22,6 +22,14 @@ var main = function () {
 
         $("#time").text(hour + ":" + min + meridiem);
 
+
+        var day = currentDateTime.getDay();
+        var daysofweek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
+
+        var today = daysofweek[day];
+        $("#day").text(today);
+
+
     }, 500);
 }
 
